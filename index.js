@@ -26,7 +26,7 @@ client.on("message", async (msg) => {
   predictions.forEach((element) => {
     if (element.results[0].match) {
       msg.reply(
-        `⚠️Warning!⚠️ Found ${element.label} in your previous message. Please delete it.❌`
+        `Warning! Found ${element.label} in your previous message. Please delete it.`
       );
     }
   });
